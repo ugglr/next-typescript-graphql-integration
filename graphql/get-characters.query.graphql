@@ -1,0 +1,12 @@
+query GetCharacters {
+  characters {
+    results {
+      id
+      name
+      species
+      episode {
+        id
+      }
+    }
+  }
+}
