@@ -15,10 +15,6 @@ const EmailForm: React.FC<Props> = ({ characters }) => {
       const random = Math.floor(Math.random() * (characters.length - 1));
       const randomCharacter = characters[random];
 
-      console.log("email: ", email);
-      console.log("name: ", randomCharacter?.name);
-      console.log("species: ", randomCharacter?.species);
-
       // Make send email request to /api/send-email
       fetch("http://localhost:3000/api/send-email", {
         method: "POST",
