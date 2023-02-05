@@ -20,7 +20,7 @@ const EmailForm: React.FC<Props> = ({ characters }) => {
       console.log("species: ", randomCharacter?.species);
 
       // Make send email request to /api/send-email
-      fetch("http://localhost:3001/api/send-email", {
+      fetch("http://localhost:3000/api/send-email", {
         method: "POST",
         body: JSON.stringify({
           email,
